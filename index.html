@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#171522"><title>塔罗图片生成器</title><link rel="stylesheet" href="style.css"></head><body><main><h1>塔罗图片生成</h1><label>牌阵<select id="spread"><option>单牌</option><option selected>无牌阵</option><option>时间流</option><option>圣三角</option><option>二选一</option></select></label><label>图片标题（选填）<input id="title" maxlength="40" placeholder="例如：今日运势"></label><div id="slots"></div><label>
+    图片配色
+    <select id="colorTheme">
+        <option value="theme1">亮色</option>
+        <option value="theme2">暗色</option>
+    </select>
+</label><button id="generate">生成图片</button><p id="status" role="status"></p><section id="result" hidden><h2>生成结果</h2><img id="preview" alt="塔罗牌阵生成图片"><a id="save" download="tarot.jpg">保存 JPEG 图片</a></section></main><script src="app.js" defer></script></body></html>
